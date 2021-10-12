@@ -1,0 +1,49 @@
+{
+  "name": "InfinitMiner",
+  "description": "Render images in game",
+  "author": "Zombie_Striker",
+  "config": {
+    "only-authorized": {
+      "description": "Whether only authorized players can use img2brick commands",
+      "type": "boolean",
+      "default": true
+    },
+    "authorized-users": {
+      "description": "List of players who can always img2brick commands",
+      "type": "players",
+      "default": []
+    },
+    "cooldown": {
+      "description": "Cooldown for time between loads (seconds)",
+      "type": "number",
+      "default": 30
+    },
+    "max-size": {
+      "description": "Maximum width or height of images to brickify",
+      "type": "number",
+      "default": 512
+    },
+    "max-filesize": {
+      "description": "Maximum downloadable file size (bytes)",
+      "type": "number",
+      "default": 5000000
+    },
+    "quilt-mode": {
+      "description": "A mode where every image uploaded is on a quilt-size grid",
+      "type": "boolean",
+      "default": false
+    },
+    "quilt-size": {
+      "description": "Size of the quilt grid, images must have dimensions a multiple of this. Min: 8",
+      "type": "number",
+      "default": 16
+    }
+  },
+  "commands": [
+    {
+      "name": "!infinstart",
+      "description": "Starts the minigame",
+      "example": "!infinstart"
+    }
+  ]
+}
